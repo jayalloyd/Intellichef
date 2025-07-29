@@ -8,6 +8,7 @@ public class IntelliChefApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(IntelliChefApplication.class, args);
+		System.out.println("hello world");
 	}
 
 }
