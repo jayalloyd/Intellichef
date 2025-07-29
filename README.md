@@ -139,7 +139,7 @@ Clone the Repository:
 
 Bash
 
-git clone https://github.com/[YourGitHubUsername]/IntelliChef.git
+git clone https://github.com/jayalloyd/IntelliChef.git
 cd IntelliChef/backend # Navigate to your Spring Boot project folder
 (Note: Adjust backend to your actual backend folder name if different)
 
