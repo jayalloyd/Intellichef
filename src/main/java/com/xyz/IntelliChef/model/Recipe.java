@@ -35,5 +35,7 @@ public class Recipe {
     @LastModifiedDate
     private Date updatedAt;
 
+    private String category;
+    private String userComments;
 
 }
