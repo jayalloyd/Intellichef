@@ -26,8 +26,8 @@ public class Recipe {
     private String description;
 
 
-    private List<String> ingredients = new ArrayList<>();
-    private double ingredientQuantity;
+//    private List<String> ingredients = new ArrayList<>();
+//    private double ingredientQuantity;
     @CreatedDate
     private Date createdAt;
 
