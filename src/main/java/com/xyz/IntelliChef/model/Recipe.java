@@ -1,11 +1,8 @@
 package com.xyz.IntelliChef.model;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EntityListeners;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -21,6 +18,12 @@ import java.util.List;
 @EntityListeners(AuditingEntityListener.class)
 public class Recipe {
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "my_entity_seq_gen")
+    @SequenceGenerator(
+            name = "my_entity_seq_gen",
+            sequenceName = "my_entity_id_seq",
+            allocationSize = 50
+    )
     private int recipeNumber;
     private  String title;
     private String description;

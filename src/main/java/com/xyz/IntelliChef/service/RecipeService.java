@@ -1,5 +1,10 @@
 package com.xyz.IntelliChef.service;
 
+import com.xyz.IntelliChef.model.Recipe;
+
 public interface RecipeService {
-    public void addRecipe();
+
+
+
+     Recipe postARecipe(Recipe recipe);
 }
